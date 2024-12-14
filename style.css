@@ -1,0 +1,70 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(238, 86%, 29%); /* Dark orange color */
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar List */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+/* Navbar List Items */
+.navbar li {
+    margin: 0 20px;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: rgb(255, 255, 255); /* Changed color to white for visibility */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Navbar Links */
+#navbar a:hover {
+    
+    background-color: rgb(79, 126, 21); 
+    color: white; 
+}
+/* Content Styling */
+.content {
+    margin-top: 60px; /* Ensures content doesn't hide behind the navbar */
+    padding: 20px;
+    height: 2000px; /* Ensures sufficient scrolling space */
+}
+
+/* Section Styling */
+section {
+    padding: 100px;
+    margin: 50px 0;
+    background-color:teal; 
+    border-radius: 8px;
+}
+
+/* Alternate Background Color for Odd Sections */
+section:nth-child(odd) {
+    background-color: rgb(94, 75, 170); 
+}
